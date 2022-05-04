@@ -1,0 +1,21 @@
+version: '3'
+services:
+  neo4j:
+    image: 'neo4j:latest'
+    environment:
+      NEO4J_AUTH: none
+    volumes:
+      - "./data:/data"
+    network_mode: host
+
+  user_manager:
+    depends_on:
+      - neo4j
+    build: user_manager
+    network_mode: host 
+
+  post_manager:
+    depends_on:
+      - neo4j
+    build: post_manager
+    network_mode: host

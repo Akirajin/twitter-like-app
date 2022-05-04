@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "behave_testing"
+version = "0.1.0"
+description = ""
+authors = ["Akirajin <tueda@uolinc.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+behave = "^1.2.6"
+py2neo = "^2021.2.3"
+requests = "^2.27.1"
+deepdiff = "^5.8.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

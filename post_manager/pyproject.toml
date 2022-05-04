@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "post_manager"
+version = "0.1.0"
+description = ""
+authors = ["Akirajin <tueda@uolinc.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+fastapi = "^0.75.1"
+uvicorn = "^0.17.6"
+py2neo = "^2021.2.3"
+requests = "^2.27.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
